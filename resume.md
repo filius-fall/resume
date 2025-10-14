@@ -1,13 +1,13 @@
 # Sreeram A
 
-Backend Engineer · Python · Flask · Redis · Docker  
+Software Developer · Python · Flask · Redis · Docker  
 **Bengaluru, Karnataka** · **+91 94930 13594** · **asreeram1729@gmail.com**  
 [LinkedIn](https://www.linkedin.com/in/sreeram-ambalam-331606178/) · [Blog](https://filius-fall.github.io/)
 
 ---
 
 ## Summary
-Backend Engineer with 3 years of experience designing APIs, caching systems, and CMS integrations.  
+Software Developer with 3 years of experience designing APIs, caching systems, and CMS integrations.  
 Focused on backend reliability, caching performance, and deployment automation using Linux and Docker environments.
 
 ---
