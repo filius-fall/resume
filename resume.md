@@ -1,9 +1,3 @@
----
-title: "Sreeram A — Resume"
-author: "Sreeram A"
-lang: en
----
-
 # Sreeram A
 
 Backend Engineer · Python · Flask · Redis · Docker  
@@ -25,7 +19,7 @@ Focused on backend reliability, caching performance, and deployment automation u
 - **Infra & DevOps:** Docker, Ansible, Apache2, uWSGI  
 - **Architecture:** REST APIs, caching layers, CI/CD automation, deployment workflows  
 - **Templating:** Jinja2, HTML/CSS  
-- **Other:** Linux server management, Docker Compose, system monitoring
+- **Other:** Linux server management, Docker Compose, system monitoring  
 
 ---
 
@@ -40,13 +34,7 @@ Focused on backend reliability, caching performance, and deployment automation u
 - Built and deployed an internal **Next.js + Prismic CMS** website for company blogs, enabling slice-based templating and dynamic content rendering.  
 - Refactored **Jinja2 templates** to improve modularity and reusability.  
 - Automated deployments using **Apache2 + uWSGI** and **Ansible**, ensuring consistent releases.  
-- Created internal CMS tooling for non-developers to manage website content efficiently.
-
----
-
-## Education
-**Bachelor of Computer Science (2018–2022)**  
-[Insert your college name if you want it displayed]
+- Created internal CMS tooling for non-developers to manage website content efficiently.  
 
 ---
 
