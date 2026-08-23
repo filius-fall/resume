@@ -1,20 +1,21 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Requirements:
-# - pandoc
-# - TeX engine (xelatex from TeX Live) for PDF
-# Optional:
-# - wkhtmltopdf if you choose the HTML->PDF path
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+OUT_DIR="$ROOT_DIR/dist"
+HTML_FILE="$ROOT_DIR/Sreeram_Ambalam_Resume.html"
+PDF_FILE="$OUT_DIR/Sreeram_Ambalam_Resume.pdf"
 
-INPUT="resume.md"
-OUT_DIR="dist"
 mkdir -p "$OUT_DIR"
+cp "$HTML_FILE" "$OUT_DIR/Sreeram_Ambalam_Resume.html"
 
-# Build PDF with Pandoc + XeLaTeX
-pandoc "$INPUT"   --from=markdown   --pdf-engine=xelatex   -V geometry:margin=1in   -V mainfont="Latin Modern Roman"   -V monofont="Latin Modern Mono"   -o "$OUT_DIR/resume.pdf"
+google-chrome \
+  --headless=new \
+  --disable-gpu \
+  --no-pdf-header-footer \
+  --print-to-pdf="$PDF_FILE" \
+  "file://$HTML_FILE"
 
-# Build HTML (simple)
-pandoc "$INPUT"   --from=markdown   -t html5   -s   -o "$OUT_DIR/resume.html"
-
-echo "Built: $OUT_DIR/resume.pdf and $OUT_DIR/resume.html"
+printf 'Built:\n  %s\n  %s\n' \
+  "$PDF_FILE" \
+  "$OUT_DIR/Sreeram_Ambalam_Resume.html"

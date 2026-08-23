@@ -1,15 +1,15 @@
-Local resume generator
+Sreeram Ambalam resume
 
-Files:
-- resume.md — your data in Markdown.
-- build.sh — builds PDF and HTML with Pandoc.
+Source files:
+- Sreeram_Ambalam_Resume.html: styled one-page resume and print source
+- build.sh: builds the PDF and copies the standalone HTML file
 
-Steps:
-1) Install Pandoc and a TeX engine (XeLaTeX).
-   - Ubuntu: sudo apt update && sudo apt install -y pandoc texlive-xetex
-2) Run:
-   chmod +x build.sh
-   ./build.sh
-3) Outputs go to ./dist as resume.pdf and resume.html
+Build:
+  chmod +x build.sh
+  ./build.sh
 
-Edit resume.md and re-run to regenerate.
+Outputs:
+- dist/Sreeram_Ambalam_Resume.pdf
+- dist/Sreeram_Ambalam_Resume.html
+
+Before sending the resume, confirm the education dates, phone number, email address, and the 50% CMS latency result.
